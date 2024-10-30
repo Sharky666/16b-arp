@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://d2awqyx77tc75"]
+
+[ext_resource type="Texture2D" uid="uid://ou6hjevd7fao" path="res://images/ba-vi-2.jpg" id="1_dsthg"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Ba-vi-2" type="Sprite2D" parent="."]
+position = Vector2(565, 327)
+texture = ExtResource("1_dsthg")
