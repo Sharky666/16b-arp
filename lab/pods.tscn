@@ -1,9 +1,9 @@
 [gd_scene load_steps=3 format=3 uid="uid://c6rg4xfxv3cjy"]
 
-[ext_resource type="Texture2D" uid="uid://b1c3fuvkrph2w" path="res://images/Untitled.png" id="1_dtacq"]
+[ext_resource type="Texture2D" path="res://images/Untitled.png" id="1_dtacq"]
 [ext_resource type="Script" path="res://lab/pods.gd" id="1_r4o8o"]
 
-[node name="pods" type="Node2D"]
+[node name="Pods" type="Node2D"]
 script = ExtResource("1_r4o8o")
 
 [node name="Untitled" type="Sprite2D" parent="."]
