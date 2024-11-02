@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://c45s4qixiayum"]
+
+[ext_resource type="Script" path="res://scenes/bunker/lab_01.gd" id="1_lj2fb"]
+[ext_resource type="Texture2D" uid="uid://bci3jn3u60hy7" path="res://images/labs/lab-01.png" id="1_vehwl"]
+
+[node name="lab01" type="Node2D"]
+script = ExtResource("1_lj2fb")
+
+[node name="Lab-01" type="Sprite2D" parent="."]
+position = Vector2(553, 301)
+texture = ExtResource("1_vehwl")
+
+[node name="Button" type="Button" parent="Lab-01"]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -370.0
+offset_top = -146.0
+offset_right = -266.0
+offset_bottom = 9.0
+
+[connection signal="button_up" from="Lab-01/Button" to="." method="_on_button_button_up"]

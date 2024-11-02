@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://c740bdvu2atrw"]
+
+[ext_resource type="Texture2D" uid="uid://1cqhnbc3gart" path="res://images/rooms/bathroom.png" id="1_5wiky"]
+[ext_resource type="Script" path="res://scenes/living_spaces/bathroom.gd" id="1_nnegl"]
+
+[node name="Bathroom" type="Node2D"]
+script = ExtResource("1_nnegl")
+
+[node name="Bathroom" type="Sprite2D" parent="."]
+position = Vector2(579, 321)
+texture = ExtResource("1_5wiky")
+
+[node name="Mirror" type="Button" parent="Bathroom"]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 82.0
+offset_top = -241.0
+offset_right = 238.0
+offset_bottom = 25.0
+rotation = -0.00786164
+
+[node name="Bath" type="Button" parent="Bathroom"]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -231.0
+offset_top = 148.0
+offset_right = -188.0
+offset_bottom = 179.0
+
+[connection signal="button_up" from="Bathroom/Mirror" to="." method="_on_mirror_button_up"]

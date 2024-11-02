@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://bbsj7haede6uv"]
+
+[ext_resource type="Texture2D" uid="uid://7lw0evr3mj5v" path="res://images/assets/mirror.png" id="1_wa6k0"]
+
+[node name="Mirror" type="Node2D"]
+
+[node name="Mirror" type="Sprite2D" parent="."]
+position = Vector2(573, 315)
+scale = Vector2(0.592208, 0.594846)
+texture = ExtResource("1_wa6k0")

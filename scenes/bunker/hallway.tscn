@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://cfvuxe8uff7m0"]
+
+[ext_resource type="Script" path="res://hallway.gd" id="1_sbvlk"]
+[ext_resource type="Texture2D" uid="uid://c5vnryqr77cmj" path="res://images/labs/door.jpg" id="2_ixv0s"]
+
+[node name="Hallway" type="Node2D"]
+script = ExtResource("1_sbvlk")
+
+[node name="Door" type="Sprite2D" parent="."]
+position = Vector2(548, 353)
+texture = ExtResource("2_ixv0s")
+
+[node name="Button" type="Button" parent="Door"]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -111.0
+offset_top = -102.0
+offset_right = -63.0
+offset_bottom = 95.0
+
+[connection signal="button_up" from="Door/Button" to="." method="_on_button_button_up"]

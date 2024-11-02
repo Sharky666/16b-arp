@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://mp73bikqqvyi"]
+
+[ext_resource type="Script" path="res://scenes/bunker/lab_bunker.gd" id="1_5t3qn"]
+[ext_resource type="Texture2D" uid="uid://olbgowlnybhv" path="res://images/labs/bunker.png" id="1_bx05r"]
+
+[node name="lab_bunker" type="Node2D"]
+script = ExtResource("1_5t3qn")
+
+[node name="Bunker" type="Sprite2D" parent="."]
+position = Vector2(579, 326)
+texture = ExtResource("1_bx05r")
+
+[node name="DoorLeft" type="Button" parent="Bunker"]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -297.0
+offset_top = -168.0
+offset_right = -236.0
+offset_bottom = 59.0
+
+[node name="CentralDoor" type="Button" parent="Bunker"]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -34.0
+offset_top = -139.0
+offset_right = 43.0
+offset_bottom = 55.0
+
+[connection signal="button_up" from="Bunker/DoorLeft" to="." method="_on_door_left_button_up"]
